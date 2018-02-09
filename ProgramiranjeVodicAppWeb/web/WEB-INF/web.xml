@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>VodicController</servlet-name>
+        <servlet-class>programiranje.vodic.VodicController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>InfoServlet</servlet-name>
+        <servlet-class>programiranje.vodic.InfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>VodicController</servlet-name>
+        <url-pattern>/VodicController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InfoServlet</servlet-name>
+        <url-pattern>/InfoServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>VodicController</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    <error-page>
+        <exception-type>java.lang.Throwable</exception-type>
+        <location>/JSP-RES/exceptions.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/JSP-RES/exceptions.jsp</location>
+    </error-page>
+</web-app>

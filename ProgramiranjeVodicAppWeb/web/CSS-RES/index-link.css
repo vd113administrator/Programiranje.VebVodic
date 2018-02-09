@@ -1,0 +1,32 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 28, 2017, 6:48:59 PM
+    Author     : Mikec
+*/
+
+a.index-link:link{color: steelblue;}
+a.index-link:visited{color: steelblue;}
+a.index-link:active{color: steelblue;}
+a.index-link-error:link{color: red;}
+a.index-link-error:visited{color: red;}
+a.index-link-error:active{color: red;}
+
+a.index-link-success:link{color: green;}
+a.index-link-success:visited{color: green;}
+a.index-link-success:active{color: green;}
+
+div.index-link{color: steelblue; cursor: pointer;}
+div.index-link-error{color: red; cursor: pointer;}
+div.index-link-success{color: green; cursor: pointer;}
+
+span.index-link{color: steelblue; cursor: pointer;}
+span.index-link-error{color: red; cursor: pointer;}
+span.index-link-success{color: green; cursor: pointer;}
+
+div.manual-link{cursor:pointer;}
+span.manual-link{cursor:pointer;}
+.manual-link{cursor:pointer;}
